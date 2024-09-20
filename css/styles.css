@@ -1,6 +1,88 @@
-﻿h1 {
-    color: palegreen;
+﻿body {
+    background-color: #55423d;
+    font-family: proxima-nova, sans-serif;
+    padding: 50px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
 }
-h2 {
-    color:rebeccapurple;
+
+h1, h2, h3, .navbar, a {
+    color: #fffffe;
+}
+p {
+    color:#fff3ec;
+}
+
+li {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
+        
+}
+
+button {
+    width: 10rem;
+    height: 5rem;
+    background-color: #ffc0ad;
+    color: #271c19;
+    border-radius: 10px;
+    font-size: 1.0em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.columnleft {
+    flex: 2;
+}
+.columnright {
+    flex: 1; 
+}
+
+line {
+    stroke: #271c19;
+    stroke-width: 2px;
+}
+
+circle {
+    fill: #ffc0ad;
+    stroke: #271c19;
+    stroke-width: 2px;
+}
+
+svg {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+}
+.scuba {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: fill;
+    border-radius: 25px;
+    border: 5px solid #ffc0ad;
+    margin: 0px;
+    padding: 0px;
 }
