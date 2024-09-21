@@ -1,9 +1,19 @@
+
+// variable to store our intervalID
+let nIntervId
+
 function GenerateGraph() {
+
+    if (!nIntervId) {
+        nIntervId = setInterval(GenerateGraph, 8000);
+    }
+
     let svg = document.getElementById('svg-container');
     // remove all child nodes of the svg element
     while (svg.firstChild !== null) {
         svg.removeChild(svg.firstChild);
     }
+    
 
     function swapElements(arr, i1, i2) {
         let res = [...arr];
