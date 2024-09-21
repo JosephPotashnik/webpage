@@ -6,8 +6,9 @@
     <title></title>
     <link rel="stylesheet" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js//GenerateGraph.js" defer></script>
 </head>
-<body>
+<body onload="GenerateGraph()">
     <nav>
         <ul class="navbar">
             <li><a href="#about">About</a></li>
@@ -45,38 +46,10 @@
             </section>
         </div>
         <div class="columnright">
-            <svg width="400" height="400">
-                <!-- Edges -->
-                <line x1="200" y1="50" x2="300" y2="100" /> <!-- v0 to v1 -->
-                <line x1="200" y1="50" x2="350" y2="200" /> <!-- v0 to v2 -->
-                <line x1="200" y1="50" x2="250" y2="150" /> <!-- v0 to v9 -->
-                <line x1="300" y1="100" x2="200" y2="350" /> <!-- v1 to v4 -->
-                <line x1="300" y1="100" x2="50" y2="200" /> <!-- v1 to v6 -->
-                <line x1="300" y1="100" x2="150" y2="150" /> <!-- v1 to v8 -->
-                <line x1="350" y1="200" x2="100" y2="100" /> <!-- v2 to v7 -->
-                <line x1="350" y1="200" x2="300" y2="300" /> <!-- v2 to v3 -->
-                <line x1="200" y1="350" x2="100" y2="300" /> <!-- v4 to v5 -->
-                <line x1="200" y1="350" x2="50" y2="200" /> <!-- v4 to v6 -->
-                <line x1="100" y1="300" x2="100" y2="100" /> <!-- v5 to v7 -->
-                <line x1="50" y1="200" x2="250" y2="150" /> <!-- v6 to v9 -->
-                <line x1="150" y1="150" x2="200" y2="350" /> <!-- v8 to v4 -->
-                <line x1="150" y1="150" x2="300" y2="300" /> <!-- v8 to v3 -->
-                <line x1="250" y1="150" x2="300" y2="300" /> <!-- v9 to v3 -->
-
-                <circle cx="200" cy="50" r="10" id="v0" />
-                <circle cx="300" cy="100" r="10" id="v1" />
-                <circle cx="350" cy="200" r="10" id="v2" />
-                <circle cx="300" cy="300" r="10" id="v3" />
-                <circle cx="200" cy="350" r="10" id="v4" />
-                <circle cx="100" cy="300" r="10" id="v5" />
-                <circle cx="50" cy="200" r="10" id="v6" />
-                <circle cx="100" cy="100" r="10" id="v7" />
-                <circle cx="150" cy="150" r="10" id="v8" />
-                <circle cx="250" cy="150" r="10" id="v9" />
+            <svg id="svg-container" width="300" height="300">
             </svg>
-            <!--<img class="scuba" src="scubadiving.jpg">-->
-            <img class="scuba" src="scubadivingsmall.jpg">
-
+            <!--<img class="scuba" src="scubadivingsmall.jpg">-->
+            <button onclick="GenerateGraph()">Click Me!</button>
         </div>
     </div>
 
