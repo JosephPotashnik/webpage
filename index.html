@@ -14,45 +14,67 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#games">Games</a></li>
-            <li><a href="#cv">CV</a></li>
+            <li>
+                <a href="https://github.com/JosephPotashnik">
+                    <!--copied from github icons-->
+                    <svg fill="#ffc0ad" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+                GitHub
+                </a>
+            </li>
 
         </ul>
     </nav>
-
-    <!--div class="container">-->
-    <!-- <div class="columnleft">-->
     <svg id="svg-container" width="300" height="300">
     </svg>
+
     <section id="about">
         <h1>About me</h1>
         <p>My name is Joseph. I'm a software Engineer and a researcher in natural language processing and learning.</p>
-        <p>I was a back-end developer at a start-up company and wrote mostly in C#. The position included ownership of various projects across all architectural layers of the software and hardware. For more details, please see my <a href="#cv">CV</a> </p>
-        <p>In recent years I've dedicated myself to an experimental, cutting-edge machine learning project involving Grammar Induction, which is the inference of a grammar (language model) from input text alone. This is called <em> unsupervised learning </em>. You can learn more about it in my <a href="#projects">projects</a> below.</p>
+        <p>I was a back-end developer at a start-up company and wrote mostly in C#. The position included ownership of various projects across all architectural layers of the software and hardware.</p>
+        <p>In recent years I've dedicated myself to an experimental, cutting-edge machine learning project involving Grammar Induction, which is the inference of a grammar (language model) from input text alone. This is an example of <em> unsupervised learning </em>. You can learn more about it in my <a href="#projects">projects</a> below.</p>
         <p>In my free time, I'm an avid bookworm, a black coffee aficionado and a serial petter of all pets. Scuba diving is surely the best thing in the world!</p>
+        <p><a href="cv.html">View My CV</a></p>
     </section>
-
 
     <section id="projects">
         <h1>Projects</h1>
-        <p>Parser</p>
-        <p>Clustering</p>
+        <p> One of my main interests is unsupervised learning, a branch of machine learning. It is useful to approach unsupervised learning by contrasting it with its more commonly used sibling, supervised learning. 
+            In the latter case, the data is <em>labeled</em> or <em>tagged</em> with the values of the target variable,
+            which we have correctly chosen in advance (we then say that the learning is supervised by the target variable). It means that a designer of a supervised learning algorithm had already studied the data 
+            and deduced what we would like to predict. The designer had looked at the data and <em>learned</em> the target variable &mdash; not the algorithm. But how was it done? How did they know what to look for?</p>
+        
+         <div class="center">
+            <img id="img1" src="supervised-learning-data_vs_unsupervised-learning-data-small.png" alt="An image that compares training datasets for supervised learning vs unsupervised learning.  The supervised learning dataset has a &quot;target&quot; variable, while the 
+            unsupervised learning data does not.">
+        
+         <a id="link1" href="https://www.sharpsightlabs.com/blog/supervised-vs-unsupervised-learning/" target="_blank"> image source </a>
+        </div>   
+
+        <p> In the real world, data  does not magically arrive labeled with what we're looking for. The task of what we would like to predict falls to us: 
+            we must seek patterns and relationships within the data to uncover the target variable ourselves. Learning our native language, clustering, 
+            and dimensionality reduction are all examples of unsupervised learning tasks.
+        </p>
+        
+        <h2>Clustering</h2>
+            <p> Clustering is a classical example in the field. There has been quite a lot of research into clustering algorithms. My own favourite type is <em> density-based</em> algorithms like DBSCAN or Density Peaks.
+                I wrote a <a href="https://github.com/JosephPotashnik/DensityPeaksClustering" target="_blank">C# library</a> that implements various Density Peaks based clustering algorithms, 
+                a <a href="https://github.com/JosephPotashnik/DensityPeaksClusteringService" target="_blank"> .NET Core WebAPI service </a> which wraps the previous library, 
+                and a <a href="https://github.com/JosephPotashnik/DensityPeaks"> slim frontend</a> in javascript that allows the user to interact with the algorithms and observe results. 
+            </p>
+
+        <h2>Grammar Induction (parser available)</h2>
+            <p> I am in the process of developing a cutting-edge Grammar Induction algorithm. This is (part of) the task faced by a child learning their native language. 
+                The paper, which can be found <a href="https://arxiv.org/abs/2312.15321" target="_blank">here</a>, 
+                is still to be published, hence the sofware is not yet ready to be made public. Nonetheless, the learner uses a highly optimised 
+                <a href="https://github.com/JosephPotashnik/EarleyParser" _target="blank">Earley Parser</a> which is available. 
+                I am in the process of making it a service.
+            </p>
     </section>
 
     <section id="games">
         <h1>Games</h1>
         <p>playing!!!</p>
     </section>
-
-    <section id="cv">
-        <h1>CV</h1>
-        <p>my CV.</p>
-    </section>
-    <!--</div>-->
-    <!--<div class="columnright">-->
-    <!--<img class="scuba" src="scubadivingsmall.jpg">-->
-    </!--div>
-    </div>
-
 
     <footer>
         <p>Contact me: email goes here (email does not appear at the moment to prevent web crawling)</p>

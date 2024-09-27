@@ -12,7 +12,7 @@
 h1, h2, h3, .navbar, a {
     color: #fffffe;
 }
-p {
+p, ul, li {
     color:#fff3ec;
 }
 
@@ -41,7 +41,7 @@ circle {
     stroke-width: 2px;
 }
 
-svg {
+#svg-container {
     box-sizing: border-box;
     object-fit: cover;
     margin: 50px;
@@ -71,4 +71,16 @@ svg {
     50% {
         transform: rotate(360deg);
     }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#img1, #link1 {
+    margin-left: auto;
+    margin-right: auto;
 }
