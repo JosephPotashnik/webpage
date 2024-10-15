@@ -66,3 +66,4 @@ function GenerateGraph() {
     for (let i = 0; i < circleArr.length; i++)
         svgContainer.appendChild(circleArr[i]);
 }
+

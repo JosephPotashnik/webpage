@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/stylesLightThemeShared.css" />
+    <link rel="stylesheet" href="css/stylesIndex.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/GenerateGraph.js"></script>
 </head>
 <body onload="GenerateGraph()">
     <nav>
@@ -24,16 +24,22 @@
 
         </ul>
     </nav>
-    <svg id="svg-container" width="300" height="300">
-    </svg>
+    <button id="theme-toggle">☀️</button>
+
+    <!--the svg container will float right of the text "about me" - see css file-->
+    <!--for smaller viewports, the svg will precede the text; this is my intention.-->
+    <svg id="svg-container" width="300" height="300"></svg>
 
     <section id="about">
         <h1>About me</h1>
         <p>My name is Joseph. I'm a software Engineer and a researcher in natural language processing and learning.</p>
         <p>I was a back-end developer at a start-up company and wrote mostly in C#. The position included ownership of various projects across all architectural layers of the software and hardware.</p>
         <p>In recent years I've dedicated myself to an experimental, cutting-edge machine learning project involving Grammar Induction, which is the inference of a grammar (language model) from input text alone. This is an example of <em> unsupervised learning </em>. You can learn more about it in my <a href="#projects">projects</a> below.</p>
-        <p>In my free time, I'm an avid bookworm, a black coffee aficionado and a serial petter of all pets. Scuba diving is surely the best thing in the world!</p>
-        <p><a href="cv.html">View My CV</a></p>
+        <p>In my free time, I'm an avid bookworm, a black coffee aficionado and a serial petter of all pets. Scuba diving is one of the apexes (or 'apices' if you're a stickler for Latin) of creation. </p>
+        <p>I'm hearing impaired and wearing two cochlear implants, feel free to ask me more about it. </p>
+        
+        <!--Since the CV contains enough information on its own, and might muddle the focus of the reader, I delegated it to a different page.-->
+        <p><a href="cv.html" target="_blank">View My CV</a></p>
     </section>
 
     <section id="projects">
@@ -56,29 +62,31 @@
         </p>
         
         <h2>Clustering</h2>
-            <p> Clustering is a classical example in the field. There has been quite a lot of research into clustering algorithms. My own favourite type is <em> density-based</em> algorithms like DBSCAN or Density Peaks.
+            <p> Clustering is a classical example of the field. There has been quite a lot of research into clustering algorithms. My own favourite type is <em> density-based</em> algorithms like DBSCAN or Density Peaks.
                 I wrote a <a href="https://github.com/JosephPotashnik/DensityPeaksClustering" target="_blank">C# library</a> that implements various Density Peaks based clustering algorithms, 
                 a <a href="https://github.com/JosephPotashnik/DensityPeaksClusteringService" target="_blank"> .NET Core WebAPI service </a> which wraps the previous library, 
                 and a <a href="https://github.com/JosephPotashnik/DensityPeaks"> slim frontend</a> in javascript that allows the user to interact with the algorithms and observe results. 
             </p>
 
         <h2>Grammar Induction (parser available)</h2>
-            <p> I am in the process of developing a cutting-edge Grammar Induction algorithm. This is (part of) the task faced by a child learning their native language. 
+            <p> I am in the process of developing a cutting-edge Grammar Induction algorithm. This is (a part of) the task faced by a child learning their native language. 
                 The paper, which can be found <a href="https://arxiv.org/abs/2312.15321" target="_blank">here</a>, 
                 is still to be published, hence the sofware is not yet ready to be made public. Nonetheless, the learner uses a highly optimised 
-                <a href="https://github.com/JosephPotashnik/EarleyParser" _target="blank">Earley Parser</a> which is available. 
+                <a href="https://github.com/JosephPotashnik/EarleyParser" target="_blank">Earley Parser</a> which is available. 
                 I am in the process of making it a service.
             </p>
     </section>
 
     <section id="games">
         <h1>Games</h1>
-        <p>playing!!!</p>
+        <p>For showcasing purposes, I wrote a sketch of a <a href="https://github.com/JosephPotashnik/SuperMarioSketch" target="_blank">platformer</a> featuring a dog, a cat and a monkey. You can play it <a href="https://josephpotashnik.github.io/SuperMarioSketch/" target="_blank">here</a>.</p>
     </section>
 
     <footer>
         <p>Contact me: email goes here (email does not appear at the moment to prevent web crawling)</p>
     </footer>
 
+    <script src="js/GenerateGraph.js"></script>
+    <script src="js/LightTheme.js"></script>
 </body>
 </html>

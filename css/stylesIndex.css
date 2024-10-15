@@ -1,14 +1,4 @@
-﻿body {
-    background-color: #55423d;
-    font-family: proxima-nova, sans-serif;
-    padding: 50px;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    line-height: 1.8;
-    font-weight: 400;
-}
-
+﻿
 h1, h2, h3, .navbar, a {
     color: #fffffe;
 }
@@ -84,3 +74,4 @@ circle {
     margin-left: auto;
     margin-right: auto;
 }
+

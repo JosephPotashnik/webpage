@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #55423d;
+    font-family: proxima-nova, sans-serif;
+    padding: 50px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Light Theme */
+body.light-theme
+
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme .navbar,
+body.light-theme a,
+body.light-theme p,
+body.light-theme ul,
+body.light-theme li
+{
+    color: #1f1235;
+}
